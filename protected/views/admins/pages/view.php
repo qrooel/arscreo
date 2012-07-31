@@ -23,10 +23,12 @@ $this->menu=array(
 	'attributes'=>array(
 		'id',
 		'header',
+    'menu_header',
 		'content',
 		'seo_title',
 		'seo_keywords',
 		'seo_description',
+		'pattern',
 		'created_at',
 		'updated_at',
 	),

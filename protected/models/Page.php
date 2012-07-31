@@ -15,6 +15,12 @@
  */
 class Page extends CActiveRecord
 {
+
+  public static $pattern_types = [
+    'index' => 'Index', 
+    'portfolio' => 'Portfolio'
+    ];
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -41,10 +47,10 @@ class Page extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('header, content, seo_title, seo_keywords, seo_description, created_at, updated_at', 'safe'),
+			array('header, menu_header, content, seo_title, seo_keywords, seo_description, created_at, updated_at, pattern', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, header, content, seo_title, seo_keywords, seo_description, created_at, updated_at', 'safe', 'on'=>'search'),
+			array('id, header, content, seo_title, seo_keywords, seo_description, created_at, updated_at, pattern', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -71,6 +77,7 @@ class Page extends CActiveRecord
 			'seo_title' => 'Seo Title',
 			'seo_keywords' => 'Seo Keywords',
 			'seo_description' => 'Seo Description',
+			'pattern' => 'pattern',
 			'created_at' => 'Created At',
 			'updated_at' => 'Updated At',
 		);
@@ -93,6 +100,7 @@ class Page extends CActiveRecord
 		$criteria->compare('seo_title',$this->seo_title,true);
 		$criteria->compare('seo_keywords',$this->seo_keywords,true);
 		$criteria->compare('seo_description',$this->seo_description,true);
+		$criteria->compare('pattern',$this->updated_at,true);
 		$criteria->compare('created_at',$this->created_at,true);
 		$criteria->compare('updated_at',$this->updated_at,true);
 
@@ -100,4 +108,24 @@ class Page extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+
+  // instance methods
+  public function getPage($pageId = null) {
+
+    $page = Page::model()->findByPk($pageId);
+
+    if(empty($page))
+      $page = Page::model()->find('pattern=:pattern', [':pattern' => 'index']);
+
+    return $page;
+  }
+
+  public function isHomePage() {
+    return ($this->pattern == 'index') ? true : false;
+  }
+
 }
+
+
+

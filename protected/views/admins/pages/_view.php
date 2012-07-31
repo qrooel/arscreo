@@ -13,6 +13,9 @@
 	<?php echo CHtml::encode($data->header); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('menu_header')); ?>:</b>
+	<?php echo CHtml::encode($data->menu_header); ?>
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
 	<?php echo CHtml::encode($data->content); ?>
 	<br />
@@ -23,6 +26,10 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('seo_keywords')); ?>:</b>
 	<?php echo CHtml::encode($data->seo_keywords); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('pattern')); ?>:</b>
+	<?php echo CHtml::encode($data->pattern); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('seo_description')); ?>:</b>

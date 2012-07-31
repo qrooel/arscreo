@@ -22,6 +22,12 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'menu_header'); ?>
+		<?php echo $form->textField($model,'menu_header'); ?>
+		<?php echo $form->error($model,'menu_header'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'content'); ?>
 		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'content'); ?>
@@ -43,6 +49,12 @@
 		<?php echo $form->labelEx($model,'seo_description'); ?>
 		<?php echo $form->textArea($model,'seo_description',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'seo_description'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'pattern'); ?>
+    <?php echo $form->dropDownList($model, 'pattern', Page::$pattern_types); ?>
+		<?php echo $form->error($model,'pattern'); ?>
 	</div>
 
 	<div class="row">
