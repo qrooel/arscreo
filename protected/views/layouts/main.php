@@ -29,7 +29,7 @@
 		</header>
 		<!-- end of header -->
 
-    <? $this->renderPartial('//layouts/shared/_navigation', ['page' => $this->page]); ?>
+    <? $this->renderPartial('//layouts/shared/_navigation'); ?>
 
     <?
       if($this->page->isHomePage()) {

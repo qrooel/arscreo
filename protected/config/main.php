@@ -16,6 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.components.helpers.*',
 	),
 
 	'modules'=>array(
@@ -38,8 +39,7 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
-        '' => 'pages/index',
-        'pages/<pageId:\d+-*\w*>' => 'pages/show',
+        '<pageSlug:[a-zA-Z0-9-]*>' => 'pages/show',
 
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',

@@ -4292,3 +4292,1110 @@ Stack trace:
 REQUEST_URI=/index.php/pages/1
 HTTP_REFERER=http://localhost:8000/index.php/pages/2
 ---
+2012/07/31 22:16:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /home/qrooel/php/yii_root/framework/web/CController.php:484
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CController.php(271): CController->missingAction('view')
+#1 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('view')
+#2 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/view')
+#3 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/pages/1
+HTTP_REFERER=http://localhost:8000/index.php/pages/2
+---
+2012/07/31 22:17:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /home/qrooel/php/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#1 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/1
+---
+2012/07/31 23:19:11 [error] [exception.CException] exception 'CException' with message 'Alias "app.models.behaviors.SlugBehavior" is invalid. Make sure it points to an existing directory or file.' in /home/qrooel/php/yii_root/framework/YiiBase.php:343
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(198): YiiBase::import('app.models.beha...', true)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:19:22 [error] [exception.CException] exception 'CException' with message 'Alias "application.models.behaviors.SlugBehavior" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /home/qrooel/php/yii_root/framework/YiiBase.php:318
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(198): YiiBase::import('application.mod...', true)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:20:05 [error] [exception.CException] exception 'CException' with message 'Alias "app.models.behaviors.SlugBehavior" is invalid. Make sure it points to an existing directory or file.' in /home/qrooel/php/yii_root/framework/YiiBase.php:343
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(198): YiiBase::import('app.models.beha...', true)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:20:10 [error] [exception.CException] exception 'CException' with message 'Alias "application.models.behaviors.SlugBehavior" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /home/qrooel/php/yii_root/framework/YiiBase.php:318
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(198): YiiBase::import('application.mod...', true)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:20:18 [error] [exception.CException] exception 'CException' with message 'Alias "app.models.behaviors.SlugBehavior" is invalid. Make sure it points to an existing directory or file.' in /home/qrooel/php/yii_root/framework/YiiBase.php:343
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(198): YiiBase::import('app.models.beha...', true)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:20:27 [error] [exception.CException] exception 'CException' with message 'Alias "application.models.behaviors.SlugBehavior" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /home/qrooel/php/yii_root/framework/YiiBase.php:318
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(198): YiiBase::import('application.mod...', true)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:20:38 [error] [exception.CException] exception 'CException' with message 'Property "SlugBehavior.max_slug_chars" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(222): CComponent->__set('max_slug_chars', 40)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:20:52 [error] [exception.CException] exception 'CException' with message 'Alias "app.models.behaviors.SlugBehavior" is invalid. Make sure it points to an existing directory or file.' in /home/qrooel/php/yii_root/framework/YiiBase.php:343
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(198): YiiBase::import('app.models.beha...', true)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:20:54 [error] [exception.CException] exception 'CException' with message 'Property "SlugBehavior.max_slug_chars" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(222): CComponent->__set('max_slug_chars', 40)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:21:11 [error] [exception.CException] exception 'CException' with message 'Property "SlugBehavior.max_slug_chars" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(222): CComponent->__set('max_slug_chars', '40')
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:21:12 [error] [exception.CException] exception 'CException' with message 'Property "SlugBehavior.max_slug_chars" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(222): CComponent->__set('max_slug_chars', '40')
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:21:19 [error] [exception.CException] exception 'CException' with message 'Property "SlugBehavior.max_slug_chars" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(222): CComponent->__set('max_slug_chars', 120)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:21:22 [error] [exception.CException] exception 'CException' with message 'Property "SlugBehavior.max_slug_chars" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(222): CComponent->__set('max_slug_chars', 125)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:21:24 [error] [exception.CException] exception 'CException' with message 'Property "SlugBehavior.max_slug_chars" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(222): CComponent->__set('max_slug_chars', 40)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:22:31 [error] [exception.CException] exception 'CException' with message 'Property "SlugBehavior.max_slug_chars" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/YiiBase.php(222): CComponent->__set('max_slug_chars', 40)
+#1 /home/qrooel/php/yii_root/framework/base/CComponent.php(327): YiiBase::createComponent(Array)
+#2 /home/qrooel/php/yii_root/framework/base/CComponent.php(298): CComponent->attachBehavior('SlugBehavior', Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(384): CComponent->attachBehaviors(Array)
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page::model()
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:29:58 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', '1')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(118): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('1')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:30:11 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', '1')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(118): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('1')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:31:41 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', '1')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(118): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page->getPage('1')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/1
+HTTP_REFERER=http://localhost:8000/index.php/2
+---
+2012/07/31 23:31:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /home/qrooel/php/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('index')
+#1 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/index
+---
+2012/07/31 23:31:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "portfolio".' in /home/qrooel/php/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('portfolio')
+#1 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:32:08 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(118): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:32:26 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(118): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:32:39 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(118): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:32:41 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(118): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:33:57 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(118): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:34:14 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(120): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:34:55 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(122): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:35:17 [error] [php] Invalid argument supplied for foreach() (/home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php:546)
+Stack trace:
+#0 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage()
+#1 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage()
+#2 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#3 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#4 /home/qrooel/php/yii_root/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#5 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): PagesController->run()
+#6 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/portfolio
+in /home/qrooel/php/yii_arscreo/protected/models/Page.php (122)
+in /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php (31)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:35:22 [error] [php] Invalid argument supplied for foreach() (/home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php:546)
+Stack trace:
+#0 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage()
+#1 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage()
+#2 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#3 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#4 /home/qrooel/php/yii_root/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#5 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): PagesController->run()
+#6 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/portfolio
+in /home/qrooel/php/yii_arscreo/protected/models/Page.php (122)
+in /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php (31)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:35:24 [error] [php] Invalid argument supplied for foreach() (/home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php:546)
+Stack trace:
+#0 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage()
+#1 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage()
+#2 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#3 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#4 /home/qrooel/php/yii_root/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#5 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): PagesController->run()
+#6 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/portfolio
+in /home/qrooel/php/yii_arscreo/protected/models/Page.php (122)
+in /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php (31)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:35:26 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(122): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:36:20 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(122): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:36:34 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(122): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:36:35 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(122): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:36:36 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(122): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:36:44 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(122): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:40:33 [error] [exception.CDbException] exception 'CDbException' with message 'Table "pages" does not have a column named "conditions".' in /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php:570
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), Array, '', Array, ''t'.')
+#1 /home/qrooel/php/yii_arscreo/protected/models/Page.php(122): CActiveRecord->findByAttributes(Array)
+#2 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#3 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#4 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#8 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#9 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:40:44 [error] [exception.CDbException] exception 'CDbException' with message 'Table "pages" does not have a column named "0".' in /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php:570
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), Array, '', Array, ''t'.')
+#1 /home/qrooel/php/yii_arscreo/protected/models/Page.php(122): CActiveRecord->findByAttributes(Array)
+#2 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#3 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#4 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#8 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#9 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:40:52 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.slug" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/schema/CDbCriteria.php(161): CComponent->__set('slug', 'portfolio')
+#1 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /home/qrooel/php/yii_root/framework/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(1453): CDbCommandBuilder->createColumnCriteria(Object(CDbTableSchema), 'slug=:slug', Array, Array, ''t'.')
+#4 /home/qrooel/php/yii_arscreo/protected/models/Page.php(122): CActiveRecord->findByAttributes('slug=:slug', Array)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): Page->getPage('portfolio')
+#6 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#7 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#11 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#12 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/portfolio
+---
+2012/07/31 23:44:23 [error] [exception.CException] exception 'CException' with message 'Property "PagesController.page" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): CComponent->__set('page', Object(Page))
+#1 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#2 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#4 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#6 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#7 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/home
+HTTP_REFERER=http://localhost:8000/index.php/portfolio
+---
+2012/07/31 23:44:30 [error] [exception.CException] exception 'CException' with message 'Property "PagesController.page" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(26): CComponent->__get('page')
+#1 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(50): PagesController->actionShow()
+#2 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(38): CFilterChain->run()
+#5 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPages(Object(CFilterChain))
+#6 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): CFilterChain->run()
+#8 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#9 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#13 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#14 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/home
+HTTP_REFERER=http://localhost:8000/index.php/portfolio
+---
+2012/07/31 23:44:48 [error] [exception.CException] exception 'CException' with message 'Property "PagesController.page" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(26): CComponent->__get('page')
+#1 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(50): PagesController->actionShow()
+#2 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(38): CFilterChain->run()
+#5 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPages(Object(CFilterChain))
+#6 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): CFilterChain->run()
+#8 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#9 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#13 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#14 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/home
+HTTP_REFERER=http://localhost:8000/index.php/portfolio
+---
+2012/07/31 23:44:50 [error] [exception.CException] exception 'CException' with message 'Property "PagesController.page" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(26): CComponent->__get('page')
+#1 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(50): PagesController->actionShow()
+#2 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(38): CFilterChain->run()
+#5 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPages(Object(CFilterChain))
+#6 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): CFilterChain->run()
+#8 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#9 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#13 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#14 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/home
+HTTP_REFERER=http://localhost:8000/index.php/portfolio
+---
+2012/07/31 23:44:58 [error] [exception.CException] exception 'CException' with message 'Property "PagesController.page" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(26): CComponent->__get('page')
+#1 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(50): PagesController->actionShow()
+#2 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(38): CFilterChain->run()
+#5 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPages(Object(CFilterChain))
+#6 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): CFilterChain->run()
+#8 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#9 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#13 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#14 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/home
+HTTP_REFERER=http://localhost:8000/index.php/portfolio
+---
+2012/07/31 23:48:46 [warning] [application] Failed to set unsafe attribute "created_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:48:46 [warning] [application] Failed to set unsafe attribute "updated_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:48:46 [error] [exception.CException] exception 'CException' with message 'Property "Page.title" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(144): CComponent->__get('title')
+#1 /home/qrooel/php/yii_root/framework/validators/CRequiredValidator.php(52): CActiveRecord->__get('title')
+#2 /home/qrooel/php/yii_root/framework/validators/CValidator.php(214): CRequiredValidator->validateAttribute(Object(Page), 'title')
+#3 /home/qrooel/php/yii_root/framework/base/CModel.php(158): CValidator->validate(Object(Page), NULL)
+#4 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(790): CModel->validate(NULL)
+#5 /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php(73): CActiveRecord->save()
+#6 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(50): PagesController->actionCreate()
+#7 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/qrooel/php/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/qrooel/php/yii_root/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('create')
+#16 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('admins/pages/cr...')
+#17 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/admins/pages/create
+HTTP_REFERER=http://localhost:8000/index.php/admins/pages/create
+---
+2012/07/31 23:49:00 [warning] [application] Failed to set unsafe attribute "created_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:49:00 [warning] [application] Failed to set unsafe attribute "updated_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:49:37 [warning] [application] Failed to set unsafe attribute "created_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:49:37 [warning] [application] Failed to set unsafe attribute "updated_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:49:52 [warning] [application] Failed to set unsafe attribute "created_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:49:52 [warning] [application] Failed to set unsafe attribute "updated_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:50:26 [warning] [application] Failed to set unsafe attribute "created_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:50:26 [warning] [application] Failed to set unsafe attribute "updated_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:50:49 [warning] [application] Failed to set unsafe attribute "created_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:50:49 [warning] [application] Failed to set unsafe attribute "updated_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:51:03 [warning] [application] Failed to set unsafe attribute "created_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:51:03 [warning] [application] Failed to set unsafe attribute "updated_at" of "Page".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (72)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/07/31 23:51:44 [error] [php] Missing argument 3 for CActiveForm::dropDownList(), called in /home/qrooel/php/yii_arscreo/protected/views/admins/pages/_form.php on line 32 and defined (/home/qrooel/php/yii_root/framework/web/widgets/CActiveForm.php:759)
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#1 /home/qrooel/php/yii_root/framework/web/CController.php(870): PagesController->renderFile()
+#2 /home/qrooel/php/yii_arscreo/protected/views/admins/pages/create.php(18): PagesController->renderPartial()
+#3 /home/qrooel/php/yii_root/framework/web/CBaseController.php(127): require()
+#4 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#5 /home/qrooel/php/yii_root/framework/web/CController.php(870): PagesController->renderFile()
+#6 /home/qrooel/php/yii_root/framework/web/CController.php(783): PagesController->renderPartial()
+#7 /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php(79): PagesController->render()
+#8 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(50): PagesController->actionCreate()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams()
+#10 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#11 /home/qrooel/php/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /home/qrooel/php/yii_root/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#13 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#14 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#16 /home/qrooel/php/yii_root/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#17 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): PagesController->run()
+#18 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#19 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admins/pages/create
+in /home/qrooel/php/yii_arscreo/protected/views/admins/pages/_form.php (32)
+in /home/qrooel/php/yii_arscreo/protected/views/admins/pages/create.php (18)
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (79)
+2012/07/31 23:51:49 [error] [exception.CException] exception 'CException' with message 'Property "Page.pattern dsa" is not defined.' in /home/qrooel/php/yii_root/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/db/ar/CActiveRecord.php(144): CComponent->__get('pattern dsa')
+#1 /home/qrooel/php/yii_root/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('pattern dsa')
+#2 /home/qrooel/php/yii_root/framework/web/helpers/CHtml.php(1515): CHtml::resolveValue(Object(Page), 'pattern dsa')
+#3 /home/qrooel/php/yii_root/framework/web/widgets/CActiveForm.php(761): CHtml::activeDropDownList(Object(Page), 'pattern dsa', Array, Array)
+#4 /home/qrooel/php/yii_arscreo/protected/views/admins/pages/_form.php(32): CActiveForm->dropDownList(Object(Page), 'pattern dsa', Array)
+#5 /home/qrooel/php/yii_root/framework/web/CBaseController.php(127): require('/home/qrooel/ph...')
+#6 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/qrooel/ph...', Array, true)
+#7 /home/qrooel/php/yii_root/framework/web/CController.php(870): CBaseController->renderFile('/home/qrooel/ph...', Array, true)
+#8 /home/qrooel/php/yii_arscreo/protected/views/admins/pages/create.php(18): CController->renderPartial('_form', Array)
+#9 /home/qrooel/php/yii_root/framework/web/CBaseController.php(127): require('/home/qrooel/ph...')
+#10 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/qrooel/ph...', Array, true)
+#11 /home/qrooel/php/yii_root/framework/web/CController.php(870): CBaseController->renderFile('/home/qrooel/ph...', Array, true)
+#12 /home/qrooel/php/yii_root/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#13 /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php(79): CController->render('create', Array)
+#14 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(50): PagesController->actionCreate()
+#15 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#16 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 /home/qrooel/php/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /home/qrooel/php/yii_root/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#22 /home/qrooel/php/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('create')
+#24 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('admins/pages/cr...')
+#25 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php/admins/pages/create
+HTTP_REFERER=http://localhost:8000/index.php/admins/pages/index
+---
+2012/07/31 23:52:04 [error] [php] Missing argument 2 for CActiveForm::labelEx(), called in /home/qrooel/php/yii_arscreo/protected/views/admins/pages/_form.php on line 31 and defined (/home/qrooel/php/yii_root/framework/web/widgets/CActiveForm.php:558)
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#1 /home/qrooel/php/yii_root/framework/web/CController.php(870): PagesController->renderFile()
+#2 /home/qrooel/php/yii_arscreo/protected/views/admins/pages/create.php(18): PagesController->renderPartial()
+#3 /home/qrooel/php/yii_root/framework/web/CBaseController.php(127): require()
+#4 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#5 /home/qrooel/php/yii_root/framework/web/CController.php(870): PagesController->renderFile()
+#6 /home/qrooel/php/yii_root/framework/web/CController.php(783): PagesController->renderPartial()
+#7 /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php(79): PagesController->render()
+#8 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(50): PagesController->actionCreate()
+#9 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams()
+#10 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#11 /home/qrooel/php/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /home/qrooel/php/yii_root/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#13 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#14 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#16 /home/qrooel/php/yii_root/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#17 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): PagesController->run()
+#18 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#19 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admins/pages/create
+in /home/qrooel/php/yii_arscreo/protected/views/admins/pages/_form.php (31)
+in /home/qrooel/php/yii_arscreo/protected/views/admins/pages/create.php (18)
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (79)
+2012/07/31 23:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "jakas-podstrona".' in /home/qrooel/php/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('jakas-podstrona')
+#1 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/jakas-podstrona
+HTTP_REFERER=http://localhost:8000/index.php/home
+---
+2012/07/31 23:55:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "jakas-podstrona".' in /home/qrooel/php/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('jakas-podstrona')
+#1 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/jakas-podstrona
+HTTP_REFERER=http://localhost:8000/index.php/portfolio
+---
+2012/07/31 23:55:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "jakas-podstrona".' in /home/qrooel/php/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('jakas-podstrona')
+#1 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/jakas-podstrona
+HTTP_REFERER=http://localhost:8000/index.php/portfolio
+---
+2012/08/01 00:17:57 [error] [php] include(Page.php): failed to open stream: No such file or directory (/home/qrooel/php/yii_root/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(31): spl_autoload_call()
+#1 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage()
+#2 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#3 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#4 /home/qrooel/php/yii_root/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#5 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): PagesController->run()
+#6 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/strona-glowna
+in /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php (31)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/08/01 00:17:59 [error] [php] include(Controller.php): failed to open stream: No such file or directory (/home/qrooel/php/yii_root/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(4): spl_autoload_call()
+#1 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(355): require()
+#2 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(277): CWebApplication->createController()
+#3 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/strona-glowna
+in /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php (4)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/08/01 00:20:38 [error] [php] include(H.php): failed to open stream: No such file or directory (/home/qrooel/php/yii_root/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/qrooel/php/yii_arscreo/protected/views/layouts/shared/_navigation.php(8): spl_autoload_call()
+#1 /home/qrooel/php/yii_root/framework/web/CBaseController.php(127): require()
+#2 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#3 /home/qrooel/php/yii_root/framework/web/CController.php(870): PagesController->renderFile()
+#4 /home/qrooel/php/yii_arscreo/protected/views/layouts/main.php(32): PagesController->renderPartial()
+#5 /home/qrooel/php/yii_root/framework/web/CBaseController.php(127): require()
+#6 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#7 /home/qrooel/php/yii_root/framework/web/CController.php(785): PagesController->renderFile()
+#8 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(26): PagesController->render()
+#9 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(50): PagesController->actionShow()
+#10 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#12 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(38): CFilterChain->run()
+#13 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPages()
+#14 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): CFilterChain->run()
+#16 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage()
+#17 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#18 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#19 /home/qrooel/php/yii_root/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#20 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): PagesController->run()
+#21 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#22 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/strona-glowna
+in /home/qrooel/php/yii_arscreo/protected/views/layouts/shared/_navigation.php (8)
+in /home/qrooel/php/yii_arscreo/protected/views/layouts/main.php (32)
+in /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php (26)
+2012/08/01 00:21:03 [error] [php] include(H.php): failed to open stream: No such file or directory (/home/qrooel/php/yii_root/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/qrooel/php/yii_arscreo/protected/views/layouts/shared/_navigation.php(8): spl_autoload_call()
+#1 /home/qrooel/php/yii_root/framework/web/CBaseController.php(127): require()
+#2 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#3 /home/qrooel/php/yii_root/framework/web/CController.php(870): PagesController->renderFile()
+#4 /home/qrooel/php/yii_arscreo/protected/views/layouts/main.php(32): PagesController->renderPartial()
+#5 /home/qrooel/php/yii_root/framework/web/CBaseController.php(127): require()
+#6 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#7 /home/qrooel/php/yii_root/framework/web/CController.php(785): PagesController->renderFile()
+#8 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(26): PagesController->render()
+#9 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(50): PagesController->actionShow()
+#10 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#12 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(38): CFilterChain->run()
+#13 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPages()
+#14 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php(32): CFilterChain->run()
+#16 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage()
+#17 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#18 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#19 /home/qrooel/php/yii_root/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#20 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): PagesController->run()
+#21 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#22 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/strona-glowna
+in /home/qrooel/php/yii_arscreo/protected/views/layouts/shared/_navigation.php (8)
+in /home/qrooel/php/yii_arscreo/protected/views/layouts/main.php (32)
+in /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php (26)

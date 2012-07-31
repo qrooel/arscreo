@@ -17,8 +17,8 @@ class Page extends CActiveRecord
 {
 
   public static $pattern_types = [
-    'index' => 'Index', 
-    'portfolio' => 'Portfolio'
+      'index' => 'Index', 
+      'portfolio' => 'Portfolio'
     ];
 
 	/**
@@ -47,10 +47,14 @@ class Page extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('header, menu_header, content, seo_title, seo_keywords, seo_description, created_at, updated_at, pattern', 'safe'),
+      ['menu_header, pattern', 'required'],
+
+			['header, menu_header, slug, content, seo_title, seo_keywords,
+        seo_description, pattern', 'safe'],
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, header, content, seo_title, seo_keywords, seo_description, created_at, updated_at, pattern', 'safe', 'on'=>'search'),
+			['id, header, content, slug, seo_title, seo_keywords, seo_description, 
+        created_at, updated_at, pattern', 'safe', 'on'=>'search'],
 		);
 	}
 
@@ -74,6 +78,9 @@ class Page extends CActiveRecord
 			'id' => 'ID',
 			'header' => 'Header',
 			'content' => 'Content',
+			'slug' => 'Slug',
+			'pattern' => 'Pattern / Template',
+			'menu_header' => 'Menu Header',
 			'seo_title' => 'Seo Title',
 			'seo_keywords' => 'Seo Keywords',
 			'seo_description' => 'Seo Description',
@@ -97,6 +104,8 @@ class Page extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('header',$this->header,true);
 		$criteria->compare('content',$this->content,true);
+		$criteria->compare('menu_header',$this->content,true);
+		$criteria->compare('slug',$this->content,true);
 		$criteria->compare('seo_title',$this->seo_title,true);
 		$criteria->compare('seo_keywords',$this->seo_keywords,true);
 		$criteria->compare('seo_description',$this->seo_description,true);
@@ -111,9 +120,9 @@ class Page extends CActiveRecord
 
 
   // instance methods
-  public function getPage($pageId = null) {
+  public function getPage($pageSlug = null) {
 
-    $page = Page::model()->findByPk($pageId);
+    $page = Page::model()->findByAttributes(['slug' => $pageSlug]);
 
     if(empty($page))
       $page = Page::model()->find('pattern=:pattern', [':pattern' => 'index']);
@@ -123,6 +132,18 @@ class Page extends CActiveRecord
 
   public function isHomePage() {
     return ($this->pattern == 'index') ? true : false;
+  }
+
+  public function behaviors() {
+    return [
+      'SlugBehavior' => [
+        'class' => 'application.models.behaviors.SlugBehavior',
+        'slug_col' => 'slug',
+        'title_col' => 'menu_header',
+        #'max_slug_chars' => 40,
+        'overwrite' => true
+      ]
+    ];
   }
 
 }

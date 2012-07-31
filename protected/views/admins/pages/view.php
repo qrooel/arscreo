@@ -24,6 +24,7 @@ $this->menu=array(
 		'id',
 		'header',
     'menu_header',
+    'slug',
 		'content',
 		'seo_title',
 		'seo_keywords',

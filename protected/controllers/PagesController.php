@@ -21,20 +21,20 @@ class PagesController extends Controller
     $this->actionShow();
 	}
 
-	public function actionShow($pageId = '')
+	public function actionShow()
 	{
     $this->render("patterns/{$this->page->pattern}", ['page' => $this->page]);
 	}
 
   public function filterLoadPage(CFilterChain $chain )
   {
-    $this->page = Page::model()->getPage(@$_GET['pageId']);
+    $this->page = Page::model()->getPage(@$_GET['pageSlug']);
     $chain->run();
   }
 
   public function filterLoadPages(CFilterChain $chain )
   {
-    $this->pages = Page::model()->findAll(['select' => 'id, menu_header']);
+    $this->pages = Page::model()->findAll(['select' => 'id, menu_header, slug']);
     $chain->run();
   }
 }
