@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Strona nieodnaleziona</title>
+<style type="text/css">
+
+body {
+background-color:	#fff;
+margin:				40px;
+font-family:		Lucida Grande, Verdana, Sans-serif;
+font-size:			12px;
+color:				#000;
+}
+
+#content  {
+border:				#999 1px solid;
+background-color:	#fff;
+padding:			20px 20px 12px 20px;
+width: 600px; 
+margin: 0 auto; 
+text-align: center; 
+}
+
+h1 {
+font-weight:		normal;
+font-size:			14px;
+color:				#990000;
+margin:				0 0 4px 0;
+}
+</style>
+</head>
+<body>
+	<div id="content">
+		<h2>Niestety. Strona, której szukasz nie została odnaleziona.</h2>
+		<a href="<?php echo site_url(); ?>">Przejdź do strony głównej</a>
+	</div>
+</body>
+</html>
