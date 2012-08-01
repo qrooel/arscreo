@@ -5399,3 +5399,437 @@ REQUEST_URI=/index.php/strona-glowna
 in /home/qrooel/php/yii_arscreo/protected/views/layouts/shared/_navigation.php (8)
 in /home/qrooel/php/yii_arscreo/protected/views/layouts/main.php (32)
 in /home/qrooel/php/yii_arscreo/protected/controllers/PagesController.php (26)
+2012/08/01 07:47:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /home/akra/own/yii_root/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/akra/own/yii_root/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/akra/own/yii_root/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/akra/own/yii_root/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/akra/own/yii_root/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Page))
+#7 /home/akra/own/arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#8 /home/akra/own/arscreo/protected/controllers/PagesController.php(31): Page::model()
+#9 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#10 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/akra/own/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/akra/own/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/akra/own/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#14 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#15 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2012/08/01 07:49:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /home/akra/own/yii_root/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/akra/own/yii_root/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/akra/own/yii_root/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/akra/own/yii_root/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/akra/own/yii_root/framework/cli/commands/MigrateCommand.php(443): CModule->getComponent('db')
+#4 /home/akra/own/yii_root/framework/cli/commands/MigrateCommand.php(452): MigrateCommand->getDbConnection()
+#5 /home/akra/own/yii_root/framework/cli/commands/MigrateCommand.php(483): MigrateCommand->getMigrationHistory(-1)
+#6 /home/akra/own/yii_root/framework/cli/commands/MigrateCommand.php(85): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /home/akra/own/yii_root/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 /home/akra/own/yii_root/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#10 /home/akra/own/yii_root/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 /home/akra/own/yii_root/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#12 /home/akra/own/yii_root/framework/yiic.php(34): CApplication->run()
+#13 /home/akra/own/arscreo/protected/yiic.php(7): require_once('/home/akra/own/...')
+#14 {main}
+---
+2012/08/01 07:51:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /home/akra/own/yii_root/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/akra/own/yii_root/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/akra/own/yii_root/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/akra/own/yii_root/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/akra/own/yii_root/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Page))
+#7 /home/akra/own/arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#8 /home/akra/own/arscreo/protected/controllers/PagesController.php(31): Page::model()
+#9 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#10 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/akra/own/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/akra/own/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/akra/own/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#14 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#15 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2012/08/01 07:55:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /home/akra/own/yii_root/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/akra/own/yii_root/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/akra/own/yii_root/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/akra/own/yii_root/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/akra/own/yii_root/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Page))
+#7 /home/akra/own/arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#8 /home/akra/own/arscreo/protected/controllers/PagesController.php(31): Page::model()
+#9 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#10 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/akra/own/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/akra/own/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/akra/own/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#14 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#15 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2012/08/01 07:55:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /home/akra/own/yii_root/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/akra/own/yii_root/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/akra/own/yii_root/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/akra/own/yii_root/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/akra/own/yii_root/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Page))
+#7 /home/akra/own/arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#8 /home/akra/own/arscreo/protected/controllers/PagesController.php(31): Page::model()
+#9 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#10 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/akra/own/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/akra/own/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/akra/own/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#14 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#15 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2012/08/01 07:56:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /home/akra/own/yii_root/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/akra/own/yii_root/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/akra/own/yii_root/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/akra/own/yii_root/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/akra/own/yii_root/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Page))
+#7 /home/akra/own/arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#8 /home/akra/own/arscreo/protected/controllers/PagesController.php(31): Page::model()
+#9 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#10 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/akra/own/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/akra/own/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/akra/own/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#14 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#15 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2012/08/01 07:56:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /home/akra/own/yii_root/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/akra/own/yii_root/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/akra/own/yii_root/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/akra/own/yii_root/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/akra/own/yii_root/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(619): CApplication->getDb()
+#5 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(Page))
+#7 /home/akra/own/arscreo/protected/models/Page.php(31): CActiveRecord::model('Page')
+#8 /home/akra/own/arscreo/protected/controllers/PagesController.php(31): Page::model()
+#9 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterLoadPage(Object(CFilterChain))
+#10 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/akra/own/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#12 /home/akra/own/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/akra/own/yii_root/framework/web/CWebApplication.php(283): CController->run('show')
+#14 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('pages/show')
+#15 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2012/08/01 08:00:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 08:00:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 08:00:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 08:00:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 08:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 08:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 08:00:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 08:00:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 08:00:34 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/home/akra/own/arscreo/protected/views/layouts/admins/main.php:46)
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#1 /home/akra/own/yii_root/framework/web/widgets/CContentDecorator.php(77): PagesController->renderFile()
+#2 /home/akra/own/yii_root/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#3 /home/akra/own/yii_root/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#4 /home/akra/own/yii_root/framework/web/CBaseController.php(207): CContentDecorator->run()
+#5 /home/akra/own/yii_root/framework/web/CBaseController.php(301): PagesController->endWidget()
+#6 /home/akra/own/arscreo/protected/views/layouts/admins/column2.php(21): PagesController->endContent()
+#7 /home/akra/own/yii_root/framework/web/CBaseController.php(127): require()
+#8 /home/akra/own/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#9 /home/akra/own/yii_root/framework/web/CController.php(785): PagesController->renderFile()
+#10 /home/akra/own/arscreo/protected/controllers/admins/PagesController.php(128): PagesController->render()
+#11 /home/akra/own/yii_root/framework/web/actions/CInlineAction.php(50): PagesController->actionIndex()
+#12 /home/akra/own/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams()
+#13 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#14 /home/akra/own/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /home/akra/own/yii_root/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#16 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#17 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#18 /home/akra/own/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#19 /home/akra/own/yii_root/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#20 /home/akra/own/yii_root/framework/web/CWebApplication.php(283): PagesController->run()
+#21 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#22 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /home/akra/own/arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admins/pages
+in /home/akra/own/arscreo/protected/views/layouts/admins/main.php (46)
+in /home/akra/own/arscreo/protected/views/layouts/admins/column2.php (21)
+in /home/akra/own/arscreo/protected/controllers/admins/PagesController.php (128)
+2012/08/01 08:00:57 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/home/akra/own/arscreo/protected/views/layouts/admins/main.php:46)
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#1 /home/akra/own/yii_root/framework/web/widgets/CContentDecorator.php(77): PagesController->renderFile()
+#2 /home/akra/own/yii_root/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#3 /home/akra/own/yii_root/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#4 /home/akra/own/yii_root/framework/web/CBaseController.php(207): CContentDecorator->run()
+#5 /home/akra/own/yii_root/framework/web/CBaseController.php(301): PagesController->endWidget()
+#6 /home/akra/own/arscreo/protected/views/layouts/admins/column2.php(21): PagesController->endContent()
+#7 /home/akra/own/yii_root/framework/web/CBaseController.php(127): require()
+#8 /home/akra/own/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#9 /home/akra/own/yii_root/framework/web/CController.php(785): PagesController->renderFile()
+#10 /home/akra/own/arscreo/protected/controllers/admins/PagesController.php(128): PagesController->render()
+#11 /home/akra/own/yii_root/framework/web/actions/CInlineAction.php(50): PagesController->actionIndex()
+#12 /home/akra/own/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams()
+#13 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#14 /home/akra/own/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /home/akra/own/yii_root/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#16 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#17 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#18 /home/akra/own/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#19 /home/akra/own/yii_root/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#20 /home/akra/own/yii_root/framework/web/CWebApplication.php(283): PagesController->run()
+#21 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#22 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /home/akra/own/arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admins/pages
+in /home/akra/own/arscreo/protected/views/layouts/admins/main.php (46)
+in /home/akra/own/arscreo/protected/views/layouts/admins/column2.php (21)
+in /home/akra/own/arscreo/protected/controllers/admins/PagesController.php (128)
+2012/08/01 10:01:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:01:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:01:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:01:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:01:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:01:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:04:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:04:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:09:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:09:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:09:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:09:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:09:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:09:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:09:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:09:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:09:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 10:09:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/akra/own/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---

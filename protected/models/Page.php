@@ -16,7 +16,7 @@
 class Page extends CActiveRecord
 {
 
-  public static $pattern_types = [
+  public static $patternTypes = [
       'index' => 'Index', 
       'portfolio' => 'Portfolio'
     ];

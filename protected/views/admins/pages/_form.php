@@ -23,7 +23,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'pattern'); ?>
-    <?php echo $form->dropDownList($model, 'pattern', Page::$pattern_types); ?>
+    <?php echo $form->dropDownList($model, 'pattern', Page::$patternTypes); ?>
 		<?php echo $form->error($model,'pattern'); ?>
 	</div>
 

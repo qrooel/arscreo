@@ -26,13 +26,13 @@ class PagesController extends Controller
     $this->render("patterns/{$this->page->pattern}", ['page' => $this->page]);
 	}
 
-  public function filterLoadPage(CFilterChain $chain )
+  public function filterLoadPage( $chain )
   {
     $this->page = Page::model()->getPage(@$_GET['pageSlug']);
     $chain->run();
   }
 
-  public function filterLoadPages(CFilterChain $chain )
+  public function filterLoadPages( $chain )
   {
     $this->pages = Page::model()->findAll(['select' => 'id, menu_header, slug']);
     $chain->run();
