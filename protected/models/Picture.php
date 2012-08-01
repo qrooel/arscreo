@@ -19,6 +19,7 @@ class Picture extends CActiveRecord
 {
 
   private $resizeMatches = ['50x50', '80x80', '120x120'];
+  private $imagesPath = "public/uploads/images/";
 
 	/**
 	 * Returns the static model of the specified AR class.
@@ -120,17 +121,47 @@ class Picture extends CActiveRecord
 		));
 	}
 
+  // CALLBACKS
+  public function beforeSave() {
+    if ($this->isNewRecord)
+      $this->created_at = date('Y-m-d H:i:s'); 
+ 
+    $this->updated_at = date('Y-m-d H:i:s'); 
+ 
+    return parent::beforeSave();
+  }
+
+
+  // INSTANCE METHODS
+  public function upload($file = 'userfile', $resize = true) {
+    $tmpFile = CUploadedFile::getInstance($this, $file);
+
+    if(!isset($tmpFile))
+      return false;
+
+    $this->file_name = $tmpFile;
+    $this->mime_type = $tmpFile->type;
+    $this->size      = $tmpFile->size;
+    $this->save();
+
+    @mkdir("{$this->imagesPath}{$this->id}", 0700);
+    $this->file_name->saveAs("{$this->imagesPath}{$this->id}/{$this->file_name}"); 
+
+    if($resize == true) 
+      $this->resize();
+  }
+
   public function resize() {
     foreach($this->resizeMatches as $value)
     {
-      $thumb = Yii::app()->phpThumb->create("public/uploads/images/{$this->id}/{$this->file_name}");
+      $thumb = Yii::app()->phpThumb->create("{$this->imagesPath}{$this->id}/{$this->file_name}");
 
-      @mkdir("public/uploads/images/{$this->id}/{$value}", 0700);
+      @mkdir("{$this->imagesPath}{$this->id}/{$value}", 0700);
 
       $matches = explode("x", $value);
       $thumb->resize($matches[0], $matches[1]);
 
-      $thumb->save("public/uploads/images/{$this->id}/{$value}/{$this->file_name}");
+      $thumb->save("{$this->imagesPath}{$this->id}/{$value}/{$this->file_name}");
     }
   }
 }

@@ -9805,3 +9805,258 @@ in /home/akra/own/arscreo/index.php (13)
 in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (113)
 in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (206)
 in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:44:21 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (198)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:44:26 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (198)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:44:26 [error] [php] Undefined variable: model (/home/akra/own/arscreo/protected/models/Picture.php:130)
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(134): PicturesController->runAction()
+#2 /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php(198): CFilterChain->run()
+#3 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PicturesController->filterLoadPagesForForms()
+#4 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /home/akra/own/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/akra/own/yii_root/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#7 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PicturesController->filterAccessControl()
+#8 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/akra/own/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/akra/own/yii_root/framework/web/CController.php(266): PicturesController->runActionWithFilters()
+#11 /home/akra/own/yii_root/framework/web/CWebApplication.php(283): PicturesController->run()
+#12 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#13 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/akra/own/arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admins/pictures/create
+in /home/akra/own/arscreo/protected/models/Picture.php (130)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (80)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (198)
+2012/08/01 15:44:41 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (198)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:46:03 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (105)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (189)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:46:08 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (105)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (189)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:46:08 [error] [php] mkdir(): File exists (/home/akra/own/arscreo/protected/models/Picture.php:132)
+Stack trace:
+#0 unknown(0): PicturesController->actionUpdate()
+#1 /home/akra/own/yii_root/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#2 /home/akra/own/yii_root/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#3 /home/akra/own/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(134): PicturesController->runAction()
+#5 /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php(189): CFilterChain->run()
+#6 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PicturesController->filterLoadPagesForForms()
+#7 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#8 /home/akra/own/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/akra/own/yii_root/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PicturesController->filterAccessControl()
+#11 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/akra/own/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/akra/own/yii_root/framework/web/CController.php(266): PicturesController->runActionWithFilters()
+#14 /home/akra/own/yii_root/framework/web/CWebApplication.php(283): PicturesController->run()
+#15 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/akra/own/arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admins/pictures/update/id/46
+in /home/akra/own/arscreo/protected/models/Picture.php (132)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (109)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (189)
+2012/08/01 15:46:17 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (105)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (189)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:46:22 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (105)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (189)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:46:26 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (105)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (189)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:46:35 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (189)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:46:39 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (189)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:49:05 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (187)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:49:08 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (187)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:49:12 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (187)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:49:17 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (187)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:49:52 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:50:23 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:50:45 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:51:04 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:57:37 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:57:45 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:57:48 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:58:00 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:58:04 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 15:59:00 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:12:36 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:12:41 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:15:08 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:15:08 [error] [system.db.CDbCommand] Error in preparing SQL: UPDATE 'pictures' SET "id"=:yp0, "file_name"=:yp1, "extension"=:yp2, "size"=:yp3, "mime_type"=:yp4, "description"=:yp5, "created_at"=:yp6, "updated_at"=NOW(), "resource_type"=:yp7, "resource_id"=:yp8 WHERE 'pictures'."id"=52
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (106)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:15:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such function: NOW' in /home/akra/own/yii_root/framework/db/CDbCommand.php:218
+Stack trace:
+#0 /home/akra/own/yii_root/framework/db/CDbCommand.php(273): CDbCommand->prepare()
+#1 /home/akra/own/yii_root/framework/db/schema/CDbCommandBuilder.php(442): CDbCommand->bindValue(':yp0', 52)
+#2 /home/akra/own/yii_root/framework/db/schema/CDbCommandBuilder.php(278): CDbCommandBuilder->bindValues(Object(CDbCommand), Array)
+#3 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(1679): CDbCommandBuilder->createUpdateCommand(Object(CDbTableSchema), Array, Object(CDbCriteria))
+#4 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(1059): CActiveRecord->updateByPk('52', Array)
+#5 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(791): CActiveRecord->update(NULL)
+#6 /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php(106): CActiveRecord->save()
+#7 [internal function]: PicturesController->actionUpdate('52')
+#8 /home/akra/own/yii_root/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PicturesController), Array)
+#9 /home/akra/own/yii_root/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PicturesController), Object(ReflectionMethod), Array)
+#10 /home/akra/own/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php(186): CFilterChain->run()
+#13 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PicturesController->filterLoadPagesForForms(Object(CFilterChain))
+#14 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/akra/own/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#16 /home/akra/own/yii_root/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#17 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#18 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 /home/akra/own/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#20 /home/akra/own/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/akra/own/yii_root/framework/web/CWebApplication.php(283): CController->run('update')
+#22 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('admins/pictures...')
+#23 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/index.php/admins/pictures/update/id/52
+HTTP_REFERER=http://localhost:8000/index.php/admins/pictures/update/id/52
+---
+2012/08/01 16:17:03 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:17:03 [error] [system.db.CDbCommand] Error in preparing SQL: UPDATE 'pictures' SET "id"=:yp0, "file_name"=:yp1, "extension"=:yp2, "size"=:yp3, "mime_type"=:yp4, "description"=:yp5, "created_at"=:yp6, "updated_at"=NOW(), "resource_type"=:yp7, "resource_id"=:yp8 WHERE 'pictures'."id"=52
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (106)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:17:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such function: NOW' in /home/akra/own/yii_root/framework/db/CDbCommand.php:218
+Stack trace:
+#0 /home/akra/own/yii_root/framework/db/CDbCommand.php(273): CDbCommand->prepare()
+#1 /home/akra/own/yii_root/framework/db/schema/CDbCommandBuilder.php(442): CDbCommand->bindValue(':yp0', 52)
+#2 /home/akra/own/yii_root/framework/db/schema/CDbCommandBuilder.php(278): CDbCommandBuilder->bindValues(Object(CDbCommand), Array)
+#3 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(1679): CDbCommandBuilder->createUpdateCommand(Object(CDbTableSchema), Array, Object(CDbCriteria))
+#4 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(1059): CActiveRecord->updateByPk('52', Array)
+#5 /home/akra/own/yii_root/framework/db/ar/CActiveRecord.php(791): CActiveRecord->update(NULL)
+#6 /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php(106): CActiveRecord->save()
+#7 [internal function]: PicturesController->actionUpdate('52')
+#8 /home/akra/own/yii_root/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PicturesController), Array)
+#9 /home/akra/own/yii_root/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PicturesController), Object(ReflectionMethod), Array)
+#10 /home/akra/own/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php(186): CFilterChain->run()
+#13 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): PicturesController->filterLoadPagesForForms(Object(CFilterChain))
+#14 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/akra/own/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#16 /home/akra/own/yii_root/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#17 /home/akra/own/yii_root/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#18 /home/akra/own/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 /home/akra/own/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#20 /home/akra/own/yii_root/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/akra/own/yii_root/framework/web/CWebApplication.php(283): CController->run('update')
+#22 /home/akra/own/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('admins/pictures...')
+#23 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/index.php/admins/pictures/update/id/52
+HTTP_REFERER=http://localhost:8000/index.php/admins/pictures/update/id/52
+---
+2012/08/01 16:18:19 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:18:27 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:18:30 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:18:34 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:19:58 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:21:48 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
+2012/08/01 16:21:56 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/akra/own/arscreo/index.php (13)
