@@ -84,6 +84,7 @@ class PicturesController extends Controller
 		$this->render('create', [
 			'model' => $model,
       'pages' => $this->pages,
+      'selectedResourceId' => @$_GET['resource_id']
 		]);
 	}
 
@@ -112,6 +113,7 @@ class PicturesController extends Controller
 		$this->render('update',array(
 			'model' => $model,
       'pages' => $this->pages,
+      'selectedResourceId' => ''
 		));
 	}
 

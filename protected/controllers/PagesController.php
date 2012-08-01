@@ -34,6 +34,7 @@ class PagesController extends Controller
 
   public function filterLoadPages( $chain )
   {
+    // move it to model
     $this->pages = Page::model()->findAll(['select' => 'id, menu_header, slug']);
     $chain->run();
   }

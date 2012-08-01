@@ -164,6 +164,13 @@ class Picture extends CActiveRecord
       $thumb->save("{$this->imagesPath}{$this->id}/{$value}/{$this->file_name}");
     }
   }
+
+  public function urlForSize($size = '50x50')
+  {
+    $baseUrl = Yii::app()->getBaseUrl(true);
+    return "{$baseUrl}/{$this->imagesPath}{$this->id}/{$size}/{$this->file_name}";
+  }
+
 }
 
 

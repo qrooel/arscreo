@@ -18,4 +18,4 @@ $this->menu=array(
 
 <h1>Update Picture <?php echo $model->id; ?></h1>
 
-<?php echo $this->renderPartial('_form', ['model'=>$model, 'pages'=>$pages]); ?>
+<?php echo $this->renderPartial('_form', ['model'=>$model, 'pages'=>$pages, 'selectedResourceId' => $selectedResourceId]); ?>

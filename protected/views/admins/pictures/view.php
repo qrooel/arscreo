@@ -31,5 +31,6 @@ $this->menu=array(
 		'updated_at',
 		'resource_type',
 		'resource_id',
+    ['label' => 'Photos', 'type' => 'html', 'value' => CHtml::image($model->urlForSize('120x120'))]
 	),
 )); ?>
