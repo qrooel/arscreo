@@ -10060,3 +10060,200 @@ in /home/akra/own/arscreo/index.php (13)
 in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
 in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
 in /home/akra/own/arscreo/index.php (13)
+2012/08/01 18:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admins/public/images/favicon.ico".' in /home/qrooel/php/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('admins/public/i...')
+#1 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admins/public/images/favicon.ico
+---
+2012/08/01 18:11:44 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/08/01 18:11:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/images/favicon.ico".' in /home/qrooel/php/yii_root/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('public/images/f...')
+#1 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/public/images/favicon.ico
+---
+2012/08/01 18:13:07 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/08/01 18:13:12 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php (104)
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/08/01 18:20:56 [error] [php] Undefined offset: 0 (/home/qrooel/php/yii_root/framework/zii/widgets/CMenu.php:303)
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CBaseController.php(148): CMenu->init()
+#1 /home/qrooel/php/yii_root/framework/web/CBaseController.php(173): PagesController->createWidget()
+#2 /home/qrooel/php/yii_arscreo/protected/views/layouts/admins/column2.php(16): PagesController->widget()
+#3 /home/qrooel/php/yii_root/framework/web/CBaseController.php(127): require()
+#4 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#5 /home/qrooel/php/yii_root/framework/web/CController.php(785): PagesController->renderFile()
+#6 /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php(56): PagesController->render()
+#7 unknown(0): PagesController->actionView()
+#8 /home/qrooel/php/yii_root/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#12 /home/qrooel/php/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/qrooel/php/yii_root/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#14 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#15 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/qrooel/php/yii_root/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#18 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): PagesController->run()
+#19 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#20 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admins/pages/view/id/1
+in /home/qrooel/php/yii_arscreo/protected/views/layouts/admins/column2.php (16)
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PagesController.php (56)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/08/01 18:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "manage".' in /home/qrooel/php/yii_root/framework/web/CController.php:484
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CController.php(271): CController->missingAction('manage')
+#1 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('manage')
+#2 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('admins/pictures...')
+#3 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admins/pictures/manage/pageId/1/resource/Page
+HTTP_REFERER=http://localhost:8000/index.php/admins/pages/view/id/1
+---
+2012/08/01 18:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "manage".' in /home/qrooel/php/yii_root/framework/web/CController.php:484
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CController.php(271): CController->missingAction('manage')
+#1 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('manage')
+#2 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('admins/pictures...')
+#3 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admins/pictures/manage/pageId/1/resource/Page
+HTTP_REFERER=http://localhost:8000/index.php/admins/pages/view/id/1
+---
+2012/08/01 18:25:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "manage".' in /home/qrooel/php/yii_root/framework/web/CController.php:484
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CController.php(271): CController->missingAction('manage')
+#1 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('manage')
+#2 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('admins/pictures...')
+#3 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admins/pictures/manage/pageId/1/resource/Page
+HTTP_REFERER=http://localhost:8000/index.php/admins/pages/view/id/1
+---
+2012/08/01 18:26:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "manage".' in /home/qrooel/php/yii_root/framework/web/CController.php:484
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CController.php(271): CController->missingAction('manage')
+#1 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): CController->run('manage')
+#2 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController('admins/pictures...')
+#3 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/qrooel/php/yii_arscreo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admins/pictures/manage/pageId/1/resource/Page
+HTTP_REFERER=http://localhost:8000/index.php/admins/pages/view/id/1
+---
+2012/08/01 18:44:19 [error] [php] Undefined index: resource_id (/home/qrooel/php/yii_arscreo/protected/views/admins/pictures/_form.php:34)
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CController.php(870): PicturesController->renderFile()
+#1 /home/qrooel/php/yii_arscreo/protected/views/admins/pictures/create.php(18): PicturesController->renderPartial()
+#2 /home/qrooel/php/yii_root/framework/web/CBaseController.php(127): require()
+#3 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): PicturesController->renderInternal()
+#4 /home/qrooel/php/yii_root/framework/web/CController.php(870): PicturesController->renderFile()
+#5 /home/qrooel/php/yii_root/framework/web/CController.php(783): PicturesController->renderPartial()
+#6 /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php(87): PicturesController->render()
+#7 unknown(0): PicturesController->actionCreate()
+#8 /home/qrooel/php/yii_root/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): PicturesController->runAction()
+#12 /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php(186): CFilterChain->run()
+#13 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PicturesController->filterLoadPagesForForms()
+#14 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/qrooel/php/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#16 /home/qrooel/php/yii_root/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#17 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PicturesController->filterAccessControl()
+#18 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#19 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#20 /home/qrooel/php/yii_root/framework/web/CController.php(266): PicturesController->runActionWithFilters()
+#21 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): PicturesController->run()
+#22 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#23 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admins/pictures/create/reso
+in /home/qrooel/php/yii_arscreo/protected/views/admins/pictures/_form.php (34)
+in /home/qrooel/php/yii_arscreo/protected/views/admins/pictures/create.php (18)
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php (87)
+2012/08/01 18:45:25 [warning] [application] Failed to set unsafe attribute "file_name" of "Picture".
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php (76)
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php (186)
+in /home/qrooel/php/yii_arscreo/index.php (13)
+2012/08/01 18:45:25 [error] [php] Undefined variable: selectedResourceId (/home/qrooel/php/yii_arscreo/protected/views/admins/pictures/_form.php:34)
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CController.php(870): PicturesController->renderFile()
+#1 /home/qrooel/php/yii_arscreo/protected/views/admins/pictures/create.php(18): PicturesController->renderPartial()
+#2 /home/qrooel/php/yii_root/framework/web/CBaseController.php(127): require()
+#3 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): PicturesController->renderInternal()
+#4 /home/qrooel/php/yii_root/framework/web/CController.php(870): PicturesController->renderFile()
+#5 /home/qrooel/php/yii_root/framework/web/CController.php(783): PicturesController->renderPartial()
+#6 /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php(87): PicturesController->render()
+#7 unknown(0): PicturesController->actionCreate()
+#8 /home/qrooel/php/yii_root/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): PicturesController->runAction()
+#12 /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php(186): CFilterChain->run()
+#13 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PicturesController->filterLoadPagesForForms()
+#14 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/qrooel/php/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#16 /home/qrooel/php/yii_root/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#17 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PicturesController->filterAccessControl()
+#18 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#19 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#20 /home/qrooel/php/yii_root/framework/web/CController.php(266): PicturesController->runActionWithFilters()
+#21 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): PicturesController->run()
+#22 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#23 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admins/pictures/create/reso
+in /home/qrooel/php/yii_arscreo/protected/views/admins/pictures/_form.php (34)
+in /home/qrooel/php/yii_arscreo/protected/views/admins/pictures/create.php (18)
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php (87)
+2012/08/01 18:45:29 [error] [php] Undefined variable: selectedResourceId (/home/qrooel/php/yii_arscreo/protected/views/admins/pictures/_form.php:34)
+Stack trace:
+#0 /home/qrooel/php/yii_root/framework/web/CController.php(870): PicturesController->renderFile()
+#1 /home/qrooel/php/yii_arscreo/protected/views/admins/pictures/create.php(18): PicturesController->renderPartial()
+#2 /home/qrooel/php/yii_root/framework/web/CBaseController.php(127): require()
+#3 /home/qrooel/php/yii_root/framework/web/CBaseController.php(96): PicturesController->renderInternal()
+#4 /home/qrooel/php/yii_root/framework/web/CController.php(870): PicturesController->renderFile()
+#5 /home/qrooel/php/yii_root/framework/web/CController.php(783): PicturesController->renderPartial()
+#6 /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php(87): PicturesController->render()
+#7 unknown(0): PicturesController->actionCreate()
+#8 /home/qrooel/php/yii_root/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /home/qrooel/php/yii_root/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /home/qrooel/php/yii_root/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(134): PicturesController->runAction()
+#12 /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php(186): CFilterChain->run()
+#13 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PicturesController->filterLoadPagesForForms()
+#14 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/qrooel/php/yii_root/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#16 /home/qrooel/php/yii_root/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#17 /home/qrooel/php/yii_root/framework/web/filters/CInlineFilter.php(59): PicturesController->filterAccessControl()
+#18 /home/qrooel/php/yii_root/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#19 /home/qrooel/php/yii_root/framework/web/CController.php(292): CFilterChain->run()
+#20 /home/qrooel/php/yii_root/framework/web/CController.php(266): PicturesController->runActionWithFilters()
+#21 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(283): PicturesController->run()
+#22 /home/qrooel/php/yii_root/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#23 /home/qrooel/php/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /home/qrooel/php/yii_arscreo/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admins/pictures/create/reso
+in /home/qrooel/php/yii_arscreo/protected/views/admins/pictures/_form.php (34)
+in /home/qrooel/php/yii_arscreo/protected/views/admins/pictures/create.php (18)
+in /home/qrooel/php/yii_arscreo/protected/controllers/admins/PicturesController.php (87)

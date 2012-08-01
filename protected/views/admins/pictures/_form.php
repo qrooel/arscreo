@@ -30,7 +30,9 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'resource_id'); ?>
-		<?php echo $form->dropDownList($model, 'resource_id', $pages); ?>
+    <?php echo $form->dropDownList($model, 'resource_id', $pages, 
+      ['options' => [$selectedResourceId => ['selected' => true]]]); 
+    ?>
 		<?php echo $form->error($model,'resource_id'); ?>
 	</div>
 
