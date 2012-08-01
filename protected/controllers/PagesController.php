@@ -8,13 +8,13 @@ class PagesController extends Controller
 
   public $layout='//layouts/main';
 
-    public function filters()
-    {
-      return [
-        'loadPage + index show',
-        'loadPages + index show'
-      ];
-    }
+  public function filters()
+  {
+    return [
+      'loadPage + index show',
+      'loadPages + index show'
+    ];
+  }
 
 	public function actionIndex()
 	{

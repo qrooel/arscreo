@@ -47,25 +47,25 @@
 					<div class="box">
 						<a href="#">
 							<img src="/public/images/print-design.png" alt="" />
-							<h3>PRINT DESIGN</h3>
+							<h3>RUBY ON RAILS</h3>
 						</a>
 					</div>
 					<div class="box">
 						<a href="#">
 							<img src="/public/images/graphic-design.png" alt="" />
-							<h3>GRAPHIC DESIGN</h3>
+							<h3>PHP</h3>
 						</a>
 					</div>
 					<div class="box">
 						<a href="#">
 							<img src="/public/images/logo-design.png" alt="" />
-							<h3>LOGO DESIGN</h3>
+							<h3>JQUERY, HTML, CSS</h3>
 						</a>
 					</div>
 					<div class="box">
 						<a href="#">
 							<img src="/public/images/vector-characters.png" alt="" />
-							<h3>VECTOR CHARACTERS</h3>
+							<h3>GRAFIKA</h3>
 						</a>
 					</div>
 					<div class="cl">&nbsp;</div>

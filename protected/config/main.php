@@ -25,7 +25,7 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'123123',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+			// 'ipFilters'=>array('127.0.0.1','::1'),
 		),
 	),
 
@@ -46,6 +46,10 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
+    'phpThumb'=>array(
+      'class'=>'application.components.EPhpThumb.EPhpThumb', // move it to exts
+    ),
+
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/arscreo.db',
 		),

@@ -7,8 +7,8 @@
         <li>
           <img src="/public/images/slide-img.png" alt="" />
           <div class="slide-cnt">
-            <h2>Innovative Design Solutions Ranging</h2>
-            <p>Lorem ipsum dolor sit amet, con-<br />sectetur adipiscing elit. Praesent non tortor quis tellus euismod sodalestis elit lorem, vehicula sit amet dictum nec, congue venenatis quam. Cras fermentum scelerisque ma .. <a href="#">Read More</a></p>
+            <h2>E-C schedule</h2>
+            <p> E-certificate schedule</p>
             <a href="#" class="slider-btn">Explore Project</a>
           </div>
         </li>

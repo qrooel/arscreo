@@ -65,8 +65,9 @@ class Page extends CActiveRecord
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
-		return array(
-		);
+		return [
+      'pictures' => [self::HAS_MANY, 'Picture', 'resource_id'],
+		];
 	}
 
 	/**
@@ -144,6 +145,21 @@ class Page extends CActiveRecord
         'overwrite' => true
       ]
     ];
+  }
+
+  public function getPagesForFormSelect() {
+    $pages = Yii::app()->db->createCommand()
+      ->select('id, slug')
+      ->from('pages')
+      ->queryAll();
+
+      $result = [];
+      foreach($pages as $value)
+      {
+        $result[$value['id']] = $value['slug'];
+      }
+
+    return $result;
   }
 
 }
