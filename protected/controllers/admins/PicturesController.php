@@ -66,7 +66,7 @@ class PicturesController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model = new Picture;
+		$model = new Picture('create');
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -74,17 +74,18 @@ class PicturesController extends Controller
 		if(isset($_POST['Picture']))
 		{
 			$model->attributes = $_POST['Picture'];
-
       $tmpFile = CUploadedFile::getInstance($model, 'file_name');
 
-      $model->file_name = $tmpFile;
-      $model->mime_type = $tmpFile->type;
-      $model->size      = $tmpFile->size;
-
 			if($model->save()) {
+        $model->file_name = $tmpFile;
+        $model->mime_type = $tmpFile->type;
+        $model->size      = $tmpFile->size;
+        $model->save();
+
         mkdir("public/uploads/images/{$model->id}", 0700);
         $model->file_name->saveAs('public/uploads/images/'.$model->id.'/'.$model->file_name); 
         $model->resize();
+
 				$this->redirect(array('view','id' => $model->id));
       }
 		}
@@ -109,9 +110,23 @@ class PicturesController extends Controller
 
 		if(isset($_POST['Picture']))
 		{
-			$model->attributes=$_POST['Picture'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			$model->attributes = $_POST['Picture'];
+      $tmpFile = CUploadedFile::getInstance($model, 'file_name');
+
+			if($model->save()) {
+        if(isset($tmpFile)) {
+          $model->file_name = $tmpFile;
+          $model->mime_type = $tmpFile->type;
+          $model->size      = $tmpFile->size;
+          $model->save();
+
+          @mkdir("public/uploads/images/{$model->id}", 0700);
+          $model->file_name->saveAs('public/uploads/images/'.$model->id.'/'.$model->file_name); 
+          $model->resize();
+        }
+
+				$this->redirect(array('view','id' => $model->id));
+      }
 		}
 
 		$this->render('update',array(

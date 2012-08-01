@@ -46,8 +46,13 @@ class Picture extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-      ['file_name', 'file', 'types' => 'jpg, gif, png'],
-			array('file_name, extension, size, mime_type, description', 'length', 'max'=>255),
+      # required only on create
+      ['file_name', 'file', 'types' => 'jpg, gif, png', 'on' => 'create'], 
+      # not required on other actions (like update)
+      ['file_name', 'file', 'allowEmpty' => true, 'types' => 'jpg, gif, png'],
+			['file_name', 'unsafe'],
+
+			array('extension, size, mime_type, description', 'length', 'max'=>255),
 			array('resource_type, resource_id', 'length', 'max'=>40),
 			array('created_at, updated_at', 'safe'),
 			// The following rule is used by search().
@@ -120,7 +125,7 @@ class Picture extends CActiveRecord
     {
       $thumb = Yii::app()->phpThumb->create("public/uploads/images/{$this->id}/{$this->file_name}");
 
-      mkdir("public/uploads/images/{$this->id}/{$value}", 0700);
+      @mkdir("public/uploads/images/{$this->id}/{$value}", 0700);
 
       $matches = explode("x", $value);
       $thumb->resize($matches[0], $matches[1]);
