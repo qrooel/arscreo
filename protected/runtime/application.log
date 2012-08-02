@@ -10060,3 +10060,114 @@ in /home/akra/own/arscreo/index.php (13)
 in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (76)
 in /home/akra/own/arscreo/protected/controllers/admins/PicturesController.php (186)
 in /home/akra/own/arscreo/index.php (13)
+2012/08/02 14:50:33 [error] [exception.CException] exception 'CException' with message 'CHttpRequest is unable to determine the request URI.' in /home/akra/own/yii_root/framework/web/CHttpRequest.php:480
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CHttpRequest.php(392): CHttpRequest->getRequestUri()
+#1 /home/akra/own/yii_root/framework/web/CUrlManager.php(361): CHttpRequest->getPathInfo()
+#2 /home/akra/own/yii_root/framework/web/CWebApplication.php(141): CUrlManager->parseUrl(Object(CHttpRequest))
+#3 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#5 /home/akra/own/arscreo/phpsh/phpsh.php(52): require_once('/home/akra/own/...')
+#6 {main}
+---
+2012/08/02 14:50:43 [error] [exception.CException] exception 'CException' with message 'CHttpRequest is unable to determine the request URI.' in /home/akra/own/yii_root/framework/web/CHttpRequest.php:480
+Stack trace:
+#0 /home/akra/own/yii_root/framework/web/CHttpRequest.php(392): CHttpRequest->getRequestUri()
+#1 /home/akra/own/yii_root/framework/web/CUrlManager.php(361): CHttpRequest->getPathInfo()
+#2 /home/akra/own/yii_root/framework/web/CWebApplication.php(141): CUrlManager->parseUrl(Object(CHttpRequest))
+#3 /home/akra/own/yii_root/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/akra/own/arscreo/index.php(13): CApplication->run()
+#5 /home/akra/own/arscreo/phpsh/phpsh.php(52): require_once('/home/akra/own/...')
+#6 {main}
+---
+2012/08/02 15:54:39 [error] [php] Trying to get property of non-object (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)
+2012/08/02 15:54:47 [error] [php] Undefined variable: a (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)
+2012/08/02 15:55:10 [error] [php] Undefined variable: a (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)
+2012/08/02 15:55:20 [error] [php] Undefined variable: a (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)
+2012/08/02 15:59:46 [error] [php] Trying to get property of non-object (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)
+2012/08/02 16:00:39 [error] [php] Trying to get property of non-object (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)
+2012/08/02 16:00:42 [error] [php] Undefined variable: z (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)
+2012/08/02 16:00:51 [error] [php] Undefined variable: z (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)
+2012/08/02 16:00:54 [error] [php] Undefined variable: z (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)
+2012/08/02 16:01:01 [error] [php] Undefined variable: z (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)
+2012/08/02 16:01:07 [error] [php] Undefined variable: z (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)
+2012/08/02 16:01:44 [error] [php] Trying to get property of non-object (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)
+2012/08/02 16:01:48 [error] [php] Undefined variable: qq (/home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code:1)
+Stack trace:
+#0 /home/akra/own/arscreo/phpsh/phpsh.php(63): ___PHPShell___->__construct()
+
+in /home/akra/own/arscreo/phpsh/phpsh.php(230) : eval()'d code (1)
+in /home/akra/own/arscreo/phpsh/phpsh.php (230)
+in /home/akra/own/arscreo/phpsh/phpsh.php (100)

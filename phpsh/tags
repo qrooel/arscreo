@@ -1,0 +1,204 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AutocompleteCache	phpsh	/^AutocompleteCache = None$/;"	v
+AutocompleteIdentifiers	phpsh	/^AutocompleteIdentifiers = []$/;"	v
+AutocompleteMatch	phpsh	/^AutocompleteMatch = None$/;"	v
+AutocompleteSignature	phpsh	/^AutocompleteSignature = None$/;"	v
+Black	ansicolor.py	/^Black = '\\033[30m'$/;"	v
+Blackbg	ansicolor.py	/^Blackbg = '\\033[40m'$/;"	v
+Blue	ansicolor.py	/^Blue = '\\033[34m'$/;"	v
+Bluebg	ansicolor.py	/^Bluebg = '\\033[44m'$/;"	v
+Bold	ansicolor.py	/^Bold = '\\033[1m'$/;"	v
+CTAGS	phpsh	/^CTAGS = "ctags"                                                                                                         $/;"	v
+CantFindTagsFile	ctags.py	/^class CantFindTagsFile(Exception):$/;"	c
+Ctags	ctags.py	/^class Ctags:$/;"	c
+Ctags	phpsh	/^    Ctags = ctags.Ctags()$/;"	v
+CtagsFunctionSignatures	ctags.py	/^class CtagsFunctionSignatures:$/;"	c
+Cyan	ansicolor.py	/^Cyan = '\\033[36m'$/;"	v
+Cyanbg	ansicolor.py	/^Cyanbg = '\\033[46m'$/;"	v
+Default	ansicolor.py	/^Default = '\\033[0m'$/;"	v
+FunctionSignatures	phpsh	/^        FunctionSignatures = ctags.CtagsFunctionSignatures().functionSignatures$/;"	v
+FunctionSignatures	phpsh	/^        FunctionSignatures = {}$/;"	v
+FunctionSignatures	phpsh	/^FunctionSignatures = {}$/;"	v
+Green	ansicolor.py	/^Green = '\\033[32m'$/;"	v
+Greenbg	ansicolor.py	/^Greenbg = '\\033[42m'$/;"	v
+HistoryFile	phpsh	/^HistoryFile = os.path.join(os.environ["HOME"], ".phpsh_history")$/;"	v
+Magenta	ansicolor.py	/^Magenta = '\\033[35m'$/;"	v
+Magentabg	ansicolor.py	/^Magentabg = '\\033[45m'$/;"	v
+PHP	phpsh	/^PHP = "php -q"                                                                                                          $/;"	v
+ProblemStartingPhp	phpsh	/^class ProblemStartingPhp(Exception):$/;"	c
+Red	ansicolor.py	/^Red = '\\033[31m'$/;"	v
+Redbg	ansicolor.py	/^Redbg = '\\033[41m'$/;"	v
+Reset	ansicolor.py	/^Reset = '\\033[0;0m'$/;"	v
+Reverse	ansicolor.py	/^Reverse = '\\033[2m'$/;"	v
+STDIN	phpsh.php	/^  define('STDIN', fopen('php:\/\/stdin', 'r'));$/;"	d
+White	ansicolor.py	/^White = '\\033[37m'$/;"	v
+Whitebg	ansicolor.py	/^Whitebg = '\\033[47m'$/;"	v
+Yellow	ansicolor.py	/^Yellow = '\\033[33m'$/;"	v
+Yellowbg	ansicolor.py	/^Yellowbg = '\\033[43m'$/;"	v
+_	phpsh.php	/^        $_ = $___phpsh___evalue;$/;"	v
+_MAX_LINE_SIZE	phpsh.php	/^  var $_MAX_LINE_SIZE = 262144;$/;"	v
+___PHPShell___	phpsh.php	/^  function ___PHPShell___($output_from_includes='', $___phpsh___do_color) {$/;"	f
+___PHPShell___	phpsh.php	/^class ___PHPShell___ {$/;"	c
+___phpsh___	phpsh.php	/^$___phpsh___ = new ___PHPShell___($___phpsh___output_from_includes, $argv[0] == '-c');$/;"	v
+___phpsh___append_input	phpsh.php	/^        $___phpsh___append_input = false;$/;"	v
+___phpsh___append_input	phpsh.php	/^        $___phpsh___append_input = true;$/;"	v
+___phpsh___append_input	phpsh.php	/^    $___phpsh___append_input = false;$/;"	v
+___phpsh___buf_len	phpsh.php	/^      $___phpsh___buf_len = strlen($___phpsh___buffer);$/;"	v
+___phpsh___buf_len	phpsh.php	/^    $___phpsh___buf_len = 0;$/;"	v
+___phpsh___buffer	phpsh.php	/^        $___phpsh___buffer = 'return ' . substr($___phpsh___buffer, 1);$/;"	v
+___phpsh___buffer	phpsh.php	/^        $___phpsh___buffer = fgets($this->_handle, $this->_MAX_LINE_SIZE);$/;"	v
+___phpsh___buffer	phpsh.php	/^      $___phpsh___buffer = ltrim($___phpsh___buffer);$/;"	v
+___phpsh___clrp	phpsh.php	/^    $___phpsh___clrp = $this->_cmd_line_ready_string . '>';$/;"	v
+___phpsh___did_arg	phpsh.php	/^      $___phpsh___did_arg = true;$/;"	v
+___phpsh___did_arg	phpsh.php	/^  $___phpsh___did_arg = false;$/;"	v
+___phpsh___do_color	phpsh.php	/^      $___phpsh___do_color = false;$/;"	v
+___phpsh___do_color	phpsh.php	/^$___phpsh___do_color = true;$/;"	v
+___phpsh___evalue	phpsh.php	/^          $___phpsh___evalue = eval($___phpsh___buffer);$/;"	v
+___phpsh___evalue	phpsh.php	/^          $___phpsh___evalue = null;$/;"	v
+___phpsh___evalue	phpsh.php	/^        $___phpsh___evalue = eval($___phpsh___buffer);$/;"	v
+___phpsh___interfaces	phpsh.php	/^      $___phpsh___interfaces = array();$/;"	v
+___phpsh___interfaces	phpsh.php	/^      $___phpsh___interfaces = get_declared_interfaces();$/;"	v
+___phpsh___methods	phpsh.php	/^      $___phpsh___methods = array_merge($___phpsh___methods, get_class_methods($___phpsh___class));$/;"	v
+___phpsh___methods	phpsh.php	/^    $___phpsh___methods = array();$/;"	v
+___phpsh___options_possible	phpsh.php	/^      $___phpsh___options_possible = false;$/;"	v
+___phpsh___options_possible	phpsh.php	/^$___phpsh___options_possible = true;$/;"	v
+___phpsh___out	phpsh.php	/^      $___phpsh___out = ob_get_contents();$/;"	v
+___phpsh___output_from_includes	phpsh.php	/^$___phpsh___output_from_includes = ob_get_contents();$/;"	v
+__author__	ctags.py	/^__author__ = "ccheever" # Charlie Cheever <charlie@facebook.com>, <ccheever@gmail.com>$/;"	v
+__author__	phpsh	/^__author__ = "ccheever" # Charlie Cheever <ccheever@post.harvard.edu>                                                   $/;"	v
+__author__	phpsh	/^__author__ = "dcorson" # Dan Corson <danl@alum.mit.edu>                                                                 $/;"	v
+__construct	phpsh.php	/^  function __construct($___phpsh___output_from_includes='', $___phpsh___do_color) {$/;"	f
+__contextRegularExpression	ctags.py	/^__contextRegularExpression = re.compile(r".*\\t\\\/\\^(.*)\\$\\\/.*")$/;"	v
+__contextRegularExpression	ctags.py	/^__contextRegularExpression = re.compile(r".*\\t\\\/\\^(.*)\\$\\\/;\\"\\t.*")$/;"	v
+__contributor__	phpsh	/^__contributor__ = "aditya" # Aditya Aggarwal (added emacs-opening to tag support)                                       $/;"	v
+__contributor__	phpsh	/^__contributor__ = "marcel" # Marcel Laverdet (always using a file in the user's homedir for history)                    $/;"	v
+__contributor__	phpsh	/^__contributor__ = "waffle.iron@gmail.com" # William Graham (bug fix for a better way of  choosing the correct php root) $/;"	v
+__date__	ctags.py	/^__date__ = "Wed Jul 19 03:20:41 PDT 2006"$/;"	v
+__date__	phpsh	/^__date__ = "Apr 10, 2006"                                                                                               $/;"	v
+__destruct	phpsh.php	/^  function __destruct() {$/;"	f
+__functionArgsRegularExpression	ctags.py	/^__functionArgsRegularExpression = re.compile(r".*function\\s+([^\\);]*[\\)]*)")$/;"	v
+__init__	ctags.py	/^    def __init__(self, tagsFilePath=None):$/;"	m	class:Ctags
+__init__	ctags.py	/^    def __init__(self, tagsFilePath=None):$/;"	m	class:CtagsFunctionSignatures
+__init__	phpsh	/^    def __init__(self, fileName = None, lineNum = None):$/;"	m	class:ProblemStartingPhp
+__send_autocomplete_identifiers	phpsh.php	/^  function __send_autocomplete_identifiers() {$/;"	f
+_ans	phpsh.php	/^        $_ans = $___phpsh___evalue;$/;"	v
+_cmd_line_ready_string	phpsh.php	/^  var $_cmd_line_ready_string = 'phpCommandLineReadyToGo';$/;"	v
+_handle	phpsh.php	/^  var $_handle = STDIN;$/;"	v
+_interactive_loop	phpsh.php	/^  function _interactive_loop($___phpsh___do_color) {$/;"	f
+append	phpsh	/^                                    append = False$/;"	v
+append	phpsh	/^                                    append = True$/;"	v
+append	phpsh	/^                        append = False$/;"	v
+append	phpsh	/^                    append = False$/;"	v
+arg	phpsh	/^    arg = sys.argv[argI]$/;"	v
+argDone	phpsh	/^            argDone = True$/;"	v
+argDone	phpsh	/^    argDone = False$/;"	v
+argI	phpsh	/^argI = 1$/;"	v
+argN	phpsh	/^argN = len(sys.argv)$/;"	v
+args	phpsh	/^            args = cline[1:]$/;"	v
+c	phpsh	/^                c = p.stderr.read(1)$/;"	v
+cline	phpsh	/^                cline = raw_input(clrPrmpt + prompt + clrIn)$/;"	v
+cline	phpsh	/^                cline = testCur[0]$/;"	v
+cline	phpsh	/^cline = None$/;"	v
+clrAnnounce	phpsh	/^    clrAnnounce = ''$/;"	v
+clrAnnounce	phpsh	/^    clrAnnounce = clr.Magenta$/;"	v
+clrComm	phpsh	/^    clrComm = ''$/;"	v
+clrComm	phpsh	/^    clrComm = clr.Green$/;"	v
+clrDefault	phpsh	/^    clrDefault = ''$/;"	v
+clrDefault	phpsh	/^    clrDefault = clr.Default$/;"	v
+clrErr	phpsh	/^    clrErr = ''$/;"	v
+clrErr	phpsh	/^    clrErr = clr.Red$/;"	v
+clrHelp	phpsh	/^    clrHelp = ''$/;"	v
+clrHelp	phpsh	/^    clrHelp = clr.Green$/;"	v
+clrIn	phpsh	/^    clrIn = ''$/;"	v
+clrIn	phpsh	/^    clrIn = clr.Yellow$/;"	v
+clrOut	phpsh	/^    clrOut = ''$/;"	v
+clrOut	phpsh	/^    clrOut = clr.Default$/;"	v
+clrPrmpt	phpsh	/^    clrPrmpt = ''$/;"	v
+clrPrmpt	phpsh	/^    clrPrmpt = clr.Cyan$/;"	v
+cmd	phpsh	/^                    cmd = 'emacs -nw +%d %s' % (emacsLine, file)$/;"	v
+comm	phpsh	/^            comm = commBase$/;"	v
+comm	phpsh	/^comm = ' '.join([commBase] +commArgs)$/;"	v
+commApp	phpsh	/^commApp = ';echo '+phpCommReadyStr+'OVER'$/;"	v
+commArgs	phpsh	/^commArgs = []$/;"	v
+commBase	phpsh	/^commBase = PHP + " " + phpsh_root + os.path.sep + "phpsh.php"                                                           $/;"	v
+commShowStr	phpsh	/^commShowStr = 'Commandline: '$/;"	v
+defined_functions	phpsh.php	/^    $defined_functions = get_defined_functions();$/;"	v
+died	phpsh	/^            died = False$/;"	v
+doColor	phpsh	/^                doColor = False$/;"	v
+doColor	phpsh	/^            doColor = False$/;"	v
+doColor	phpsh	/^doColor = True$/;"	v
+doc	phpsh	/^                                    doc = ""$/;"	v
+doc	phpsh	/^                        doc = ""$/;"	v
+doc	phpsh	/^                    doc = ""$/;"	v
+docStartLine	phpsh	/^                                    docStartLine = lineNum$/;"	v
+emacsLine	phpsh	/^                            emacsLine = lineNum$/;"	v
+err	phpsh	/^        err = ''$/;"	v
+errN	phpsh	/^            errN = err + '\\n'$/;"	v
+errS	phpsh	/^            errS = err.strip()[4:].replace(":  ", ": ")$/;"	v
+errS	phpsh	/^        errS = None$/;"	v
+file	phpsh	/^                        file = Ctags.tagsRoot + os.path.sep + t["file"]$/;"	v
+file	phpsh	/^                    file = Ctags.tagsRoot + os.path.sep + t["file"]$/;"	v
+findTagsFile	ctags.py	/^def findTagsFile(dir=None, tagsFileName="tags"):$/;"	f
+foundTag	phpsh	/^                            foundTag = True$/;"	v
+foundTag	phpsh	/^                    foundTag = False$/;"	v
+getEsc	phpsh	/^def getEsc(pipe):$/;"	f
+helpMessage	phpsh	/^def helpMessage():$/;"	f
+identifier	phpsh	/^                identifier = identifier[1:]$/;"	v
+identifier	phpsh	/^            identifier = cline[2:]$/;"	v
+initializedSuccessfully	phpsh	/^            initializedSuccessfully = False$/;"	v
+initializedSuccessfully	phpsh	/^        initializedSuccessfully = True$/;"	v
+lineNum	phpsh	/^                        lineNum = 0$/;"	v
+lineNum	phpsh	/^                    lineNum = 1$/;"	v
+lookupDocumentation	phpsh	/^                lookupDocumentation = False$/;"	v
+lookupDocumentation	phpsh	/^            lookupDocumentation = True$/;"	v
+optionsPossible	phpsh	/^            optionsPossible = False$/;"	v
+optionsPossible	phpsh	/^optionsPossible = True$/;"	v
+outN	phpsh	/^            outN = out + '\\n'$/;"	v
+outS	phpsh	/^            outS = out[4:][:-4].strip()$/;"	v
+outS	phpsh	/^        outS = None$/;"	v
+p	phpsh	/^                  p = phpOpenAndCheck(comm+commApp)$/;"	v
+p	phpsh	/^            p = phpOpenAndCheck(comm+commApp)$/;"	v
+p	phpsh	/^            p = phpRestart(comm+commApp, p)$/;"	v
+p	phpsh	/^p = phpOpenAndCheck(comm+commApp)$/;"	v
+pEmacs	phpsh	/^                    pEmacs = Popen(cmd, shell=True)$/;"	v
+pVim	phpsh	/^                pVim = Popen(vim + tag, shell=True)$/;"	v
+parseFunctionSignatures	ctags.py	/^def parseFunctionSignatures(tagsFilePath):$/;"	f
+parseTagsFile	ctags.py	/^def parseTagsFile(tagsFilePath):$/;"	f
+phpCommReadyStr	phpsh	/^phpCommReadyStr = 'phpCommandLineReadyToGo'$/;"	v
+phpMorePrompt	phpsh	/^phpMorePrompt = ' ... '$/;"	v
+phpOpen	phpsh	/^def phpOpen(cmd):$/;"	f
+phpOpenAndCheck	phpsh	/^def phpOpenAndCheck(cmd):$/;"	f
+phpPrompt	phpsh	/^phpPrompt = 'php> '$/;"	v
+phpPromptLen	phpsh	/^phpPromptLen = len(phpPrompt)$/;"	v
+phpRe	phpsh	/^phpRe = re.compile(phpCommReadyStr+'\\n')$/;"	v
+phpReOver	phpsh	/^phpReOver = re.compile(phpCommReadyStr+'OVER\\n')$/;"	v
+phpRestart	phpsh	/^def phpRestart(cmd, p):$/;"	f
+phpRoot	phpsh	/^phpRoot = phpshRoot + '\/..'$/;"	v
+php_escape	phpsh.php	/^  function php_escape($s) {$/;"	f
+phpshRoot	phpsh	/^phpshRoot = os.path.dirname(os.path.realpath(__file__))$/;"	v
+phpsh_root	phpsh	/^phpsh_root = os.path.dirname(os.path.realpath(__file__))                                                                $/;"	v
+prompt	phpsh	/^                    prompt = phpMorePrompt$/;"	v
+prompt	phpsh	/^                    prompt = phpPrompt$/;"	v
+readOnly	phpsh	/^            readOnly = cline.startswith('v ')$/;"	v
+restartStr	phpsh	/^restartStr = 'Restarting: '$/;"	v
+t	phpsh	/^                t = Ctags.pyTags[tag][0]$/;"	v
+tabComplete	phpsh	/^def tabComplete(text, state):$/;"	f
+tag	phpsh	/^                tag = tag[1:]$/;"	v
+tag	phpsh	/^            tag = cline[2:]$/;"	v
+tags	phpsh	/^                tags = Ctags.pyTags[identifier]$/;"	v
+testCheck	phpsh	/^                testCheck = testCheck[:-1]$/;"	v
+testCheck	phpsh	/^            testCheck = ''$/;"	v
+testCur	phpsh	/^                testCur = testPairsIter.next()$/;"	v
+testExpected	phpsh	/^                testExpected = '\\n'.join(testCur[1])$/;"	v
+testFN	phpsh	/^                testFN = sys.argv[argI + 1]$/;"	v
+testMode	phpsh	/^                testMode = True$/;"	v
+testMode	phpsh	/^testMode = False$/;"	v
+unEsc	phpsh	/^def unEsc(s):$/;"	f
+updateTestPairs	phpsh	/^def updateTestPairs(testPairs, inLine, outLines, inLineLineN):$/;"	f
+vim	phpsh	/^                    vim = "vim "$/;"	v
+vim	phpsh	/^                    vim = "vim -R"$/;"	v
